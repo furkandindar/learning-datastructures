@@ -3,16 +3,16 @@ package ds.stack;
 public class Stack {
 
     private int maxSize;
-    private long[] stackArray;
+    private char[] stackArray;
     private int top;
 
     public Stack(int size){
         this.maxSize = size;
-        this.stackArray = new long[maxSize];
+        this.stackArray = new char[maxSize];
         this.top = -1; // it represents the index position of the last item
     }
 
-    public void push(long new_item){
+    public void push(char new_item){
         if (isFull()){
             System.out.println("Stack is already full!"); //error handling
             //testing commit
@@ -23,10 +23,10 @@ public class Stack {
         }
     }
 
-    public long pop(){
+    public char pop(){
         if(isEmpty()){
             System.out.println("Stack is already empty!"); //error handling
-            return -1;
+            return '0';
         }
         else{
             int old_top = top;
