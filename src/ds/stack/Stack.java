@@ -14,7 +14,7 @@ public class Stack {
 
     public void push(long new_item){
         if (isFull()){
-            System.out.println("Stack is already full!");
+            System.out.println("Stack is already full!"); //error handling
         }
         else {
             top++;
@@ -24,7 +24,7 @@ public class Stack {
 
     public long pop(){
         if(isEmpty()){
-            System.out.println("Stack is already empty!");
+            System.out.println("Stack is already empty!"); //error handling
             return -1;
         }
         else{
