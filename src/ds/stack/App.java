@@ -22,7 +22,7 @@ public class App {
         int stack_size = str.length(); // get the max stack size
         Stack theStack = new Stack(stack_size); // creating the stack
         for (int i =0; i < str.length(); i++){
-            char ch = str.charAt(i);
+            char ch = str.charAt(i); //
             theStack.push(ch);
         }
 
