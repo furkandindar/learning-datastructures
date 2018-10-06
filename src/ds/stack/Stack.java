@@ -13,14 +13,25 @@ public class Stack {
     }
 
     public void push(long new_item){
-        top++;
-        stackArray[top] = new_item;
+        if (isFull()){
+            System.out.println("Stack is already full!");
+        }
+        else {
+            top++;
+            stackArray[top] = new_item;
+        }
     }
 
     public long pop(){
-        int old_top = top;
-        top--;
-        return stackArray[old_top];
+        if(isEmpty()){
+            System.out.println("Stack is already empty!");
+            return -1;
+        }
+        else{
+            int old_top = top;
+            top--;
+            return stackArray[old_top];
+        }
     }
 
     public long peak(){
