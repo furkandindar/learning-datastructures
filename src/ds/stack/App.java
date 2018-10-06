@@ -23,7 +23,7 @@ public class App {
         Stack theStack = new Stack(stack_size); // creating the stack
         for (int i =0; i < str.length(); i++){
             char ch = str.charAt(i); //
-            theStack.push(ch);
+            theStack.push(ch); //
         }
 
         String result = "";
