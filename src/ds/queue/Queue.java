@@ -18,7 +18,7 @@ public class Queue {
 
     public void insert(long j){
 
-        if (rear == maxSize -1){ // circular queue
+        if (rear == maxSize -1){ // circular queue ***
             rear = -1; // set rear back to initial
         }
         rear++;
