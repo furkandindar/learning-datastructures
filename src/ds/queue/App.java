@@ -11,7 +11,7 @@ public class App {
         myQ.insert(300);
         myQ.insert(400);
         myQ.insert(500);
-        myQ.insert(1); // circular queue test
+        myQ.insert(1); // circular queue test output [1 200 300 400 500]
         myQ.view();
     }
 }
