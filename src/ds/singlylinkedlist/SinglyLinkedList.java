@@ -13,7 +13,7 @@ public class SinglyLinkedList {
     }
 
     //insert at the beginning
-    public void insertFirst(int data){
+    public void insertFirst(int data){ //
         Node newNode = new Node();
         newNode.data = data;
         newNode.next = first;
